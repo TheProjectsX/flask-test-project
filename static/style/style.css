@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: dodgerblue;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  margin-block: 1.5rem 2rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header p {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.addToDo {
+  margin-bottom: 40px;
+  display: flex;
+  width: 310px;
+  overflow: hidden;
+}
+
+.addToDo input,
+.addToDo button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  --border: 2.5px solid #a5a4a4;
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+.addToDo input {
+  width: 255px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: var(--border);
+}
+
+.addToDo input:focus {
+  border-color: black;
+}
+
+.addToDo button {
+  width: 55px;
+  background-color: greenyellow;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: var(--border);
+}
+
+.addToDo button:hover {
+  cursor: pointer;
+}
+
+.addToDo button:active {
+  border-color: black;
+  background-color: white;
+}
+
+.toDoList {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.toDoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: calc(300px - 10px);
+}
+
+.toDoText {
+  flex-grow: 1;
+  color: #0024d7;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.toDoText:hover {
+  cursor: pointer;
+}
+
+.toDoRemove {
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 6px 8px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.toDoRemove:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.toDoRemove:active {
+  border-color: dodgerblue;
+  background-color: white;
+  color: dodgerblue;
+}
+
+.toDoDone {
+  color: gray;
+  text-decoration: line-through 1.5px;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
